@@ -4,11 +4,11 @@ import time
 from colorama import init, Fore, Style
 
 print(f"Enter the Job that you need to find :")
-job_name = input(f"{Fore.GREEN}>>  {Style.RESET_ALL}\n")
+job_name = input(f"{Fore.GREEN}>>  {Style.RESET_ALL}")
 init()
 
 print(
-    f"Enter the Number of Job pages that you need to find ",
+    f"\nEnter the Number of Job pages that you need to find ",
     end="",
 )
 print(f"{Fore.RED}( Note : 1 page contains 25 jobs ){Style.RESET_ALL}:")
@@ -91,5 +91,7 @@ print(
     f"Total Time Taken : {Fore.GREEN}{end_time - start_time} seconds {Style.RESET_ALL}"
 )
 print(f"Total Jobs Found :{Fore.GREEN} {count} {Style.RESET_ALL}")
-print(f"You can find the jobs in {Fore.GREEN}{job_name}_jobs.json{Style.RESET_ALL}")
+print(
+    f"You can find the jobs in {Fore.GREEN}Jobs/{job_name}_jobs.json{Style.RESET_ALL}"
+)
 print("--------------------------------------------------------")
